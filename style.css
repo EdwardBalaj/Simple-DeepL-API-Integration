@@ -32,6 +32,6 @@ textarea {
 
 select {
 	display: block;
-	width: 10%;
+	width: 10em;
 	margin: 1em 0;
 }

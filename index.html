@@ -7,11 +7,13 @@
 	File description: HTML page which is the main component of the API integration 
 					  and makes use of the visual interface (style.css) and the logic (API-DeepL.js).
 -->
+
 <!DOCTYPE html>
 <html>
 <head>
-<title>DeepL API Translation</title>
-<link rel="stylesheet" href="style.css">
+	<title>DeepL API Translation</title>
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="API-DeepL.js"></script>
 </head>
 <body>
 	<form id="layout">
@@ -24,7 +26,7 @@
 			<textarea type="text" id="original-text"></textarea>
 		</div>
 		
-		<input type="submit" id="translate" value="Translate">
+		<input type="button" id="translate" onclick="translateText()" value="Translate">
 		</br>
 		
 		<div id="destination">
@@ -62,6 +64,7 @@
 		
 			<textarea type="text" id="translated-text"></textarea>
 		</div>
+		<p>Authored by: Alexandru Edward Balaj</p>
 	</form>
 </body>
 </html>
