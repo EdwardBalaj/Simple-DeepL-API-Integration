@@ -47,6 +47,8 @@ function setup() {
 
 	xmlHTMLRequest.setRequestHeader("Accept", "*/*");
 	xmlHTMLRequest.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+	// xmlHTMLRequest.setRequestHeader("User-Agent", "DeepL API Implementation");
+	// xmlHTMLRequest.setRequestHeader("Content-Length", null);
 }
 
 /*
@@ -66,7 +68,7 @@ function prepareText(original_text) {
 function translateText() {
 	setup();
 	
-	var target_language = document.getElementById("destionation-language").value;
+	var target_language = document.getElementById("destination-language").value;
 	
 	var original_text = document.getElementById("original-text").value;
 	
