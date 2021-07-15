@@ -11,14 +11,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<!-- Title of the page. -->
 	<title>DeepL API Translation</title>
+	<!-- Additional files such as styles and scripts. -->
 	<link rel="stylesheet" href="style.css">
 	<script type="text/javascript" src="API-DeepL.js"></script>
 </head>
 <body>
+	<!-- Keeps all elements in a well laid out form. -->
 	<form id="layout">
+		<!-- Source language part, also kept in its own element. -->
 		<div id="source">
 			<label>Source Language:</label>
+			<!-- Since English is the only option, it will default to it. -->
 			<select id="source-language" name="source-language">
 				<option value="EN">English</option>
 			</select>
@@ -26,11 +31,16 @@
 			<textarea type="text" id="original-text"></textarea>
 		</div>
 		
+		<!-- Uses the translateText() function in the API-DeepL.js file to parse the input, s
+			 end it for translation, and then parse the response. -->
 		<input type="button" id="translate" onclick="translateText()" value="Translate">
 		</br>
 		
+		<!-- Destination language part, also kept in its own element. -->
 		<div id="destination">
 			<label>Destionation Language:</label>
+			<!-- Since there are more destination languages, and they are all sorted in alphabetical order, 
+			     Bulgarian is the default one. -->
 			<select id="destionation-language" name="destionation-language">
 				<option value="BG">Bulgarian</option>
 				<option value="ZH">Chinese</option>
